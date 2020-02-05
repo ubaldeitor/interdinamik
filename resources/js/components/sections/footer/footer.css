@@ -1,0 +1,38 @@
+.footerStyle {
+    background-color: #2F2B8C;
+    color: #f2f2f2;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.footerStyle ul {
+    list-style-type: none;
+}
+
+.powerBy {
+    background-color: #F2D22E;
+    color:black;
+}
+
+.powerBy p {
+    margin:10px 10px 10px 10px;
+    text-align: right;
+}
+
+.sbtStyle {
+    font-family: 'Lato', sans-serif;
+}
+
+.titleStyle {
+    font-family: 'Lato', sans-serif;
+}
+
+.txtStyle {
+    font-family: 'Raleway', sans-serif;
+}
+
+.endTxtStyle {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
