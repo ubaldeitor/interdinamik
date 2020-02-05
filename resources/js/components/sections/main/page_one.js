@@ -42,41 +42,13 @@ class PageOne extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col lg={4} md={4} sm={12}>
-                        <img src="images/clothes.png" alt="Ropa" width="100%" />
-                    </Col>
-                    <Col lg={4} md={4} sm={12}>
-                        <img
-                            src="images/running.png"
-                            alt="Deportes"
-                            width="100%"
-                        />
-                    </Col>
-                    <Col lg={4} md={4} sm={12}>
-                        <img
-                            src="images/shoes.png"
-                            alt="Calzado"
-                            width="100%"
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg={4} md={4} sm={12}>
-                        <img
-                            src="images/electronics.png"
-                            alt="Electrónica"
-                            width="100%"
-                        />
-                    </Col>
-                    <Col lg={4} md={4} sm={12}>
-                        <img src="images/home.png" alt="Hogar" width="100%" />
-                    </Col>
-                    <Col lg={4} md={4} sm={12}>
-                        <img
-                            src="images/office.png"
-                            alt="Oficina"
-                            width="100%"
-                        />
+                    <Col lg={12} md={12} sm={12}>
+                        <div class="portada-img">
+                            <div class="portada-msg">
+                                <h3 class="sub-front-msg">Ese obsequió para una ocasión especial lo encuentras en</h3>
+                                <h1 class="front-msg">Interdinamik</h1>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
                 <Row>

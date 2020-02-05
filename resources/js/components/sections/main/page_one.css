@@ -69,3 +69,25 @@
     margin-right: auto;
     width: 60%;
 }
+
+.portada-img{
+    background:url(../../../../../public/images/portada_img.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.portada-msg {
+    width:40%;
+    margin-left: auto;
+    margin-right: 10%;
+    padding-top: 20%;
+}
+
+.sub-front-msg {
+    font-family: cursive;
+    color: #73062E;
+}
+
+.front-msg {
+    color: #BFB8B4;
+}

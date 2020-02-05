@@ -20525,12 +20525,13 @@ exports.push([module.i, ".loginSty {\n    padding: 10px 0px 10px 0px;\n}\n", ""]
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.description {\n    padding: 5px 5px 5px 5px;\n    /*margin: 0px 5px 0px 5px;*/\n}\n\n.description p {\n    text-align: left;\n}\n\n.enterpriseMsg {\n    padding: 10px 0px 10px 0px;\n}\n\n.ubicationStyle {\n    background-color: #f2f2f2;\n    padding: 10px 0px 10px 0px;\n    text-align: left;\n}\n.ubicationStyle h2{\n    text-align: center;\n}\n\n.infoStyle {\n    padding: 10px 0px 10px 0px;\n}\n\n.backStyle {\n    text-align: left;\n}\n.nextStyle {\n    text-align: right;\n}\n\n.readMore {\n    text-align: right;\n}\n\n.sbtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.titleStyle {\n    font-family: 'Lato', sans-serif;\n}\n\n.txtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.txtLinkStyle {\n    font-family: 'Raleway', sans-serif;\n    text-align: right;\n}\n\n.btnStyle {\n    background-color: #F2D22E;\n    border-color: #F2D22E;\n}\n\n.btnStyle:hover {\n    background-color: #AABF11;\n    border-color: #AABF11;\n    color: black;\n}\n\n.main-msg{\n    margin-left: auto;\n    margin-right: auto;\n    width: 60%;\n}", ""]);
+exports.push([module.i, "\n.description {\n    padding: 5px 5px 5px 5px;\n    /*margin: 0px 5px 0px 5px;*/\n}\n\n.description p {\n    text-align: left;\n}\n\n.enterpriseMsg {\n    padding: 10px 0px 10px 0px;\n}\n\n.ubicationStyle {\n    background-color: #f2f2f2;\n    padding: 10px 0px 10px 0px;\n    text-align: left;\n}\n.ubicationStyle h2{\n    text-align: center;\n}\n\n.infoStyle {\n    padding: 10px 0px 10px 0px;\n}\n\n.backStyle {\n    text-align: left;\n}\n.nextStyle {\n    text-align: right;\n}\n\n.readMore {\n    text-align: right;\n}\n\n.sbtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.titleStyle {\n    font-family: 'Lato', sans-serif;\n}\n\n.txtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.txtLinkStyle {\n    font-family: 'Raleway', sans-serif;\n    text-align: right;\n}\n\n.btnStyle {\n    background-color: #F2D22E;\n    border-color: #F2D22E;\n}\n\n.btnStyle:hover {\n    background-color: #AABF11;\n    border-color: #AABF11;\n    color: black;\n}\n\n.main-msg{\n    margin-left: auto;\n    margin-right: auto;\n    width: 60%;\n}\n\n.portada-img{\n    background:url(" + escape(__webpack_require__(/*! ../../../../../public/images/portada_img.png */ "./public/images/portada_img.png")) + ") no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n\n.portada-msg {\n    width:40%;\n    margin-left: auto;\n    margin-right: 10%;\n    padding-top: 20%;\n}\n\n.sub-front-msg {\n    font-family: cursive;\n    color: #73062E;\n}\n\n.front-msg {\n    color: #BFB8B4;\n}", ""]);
 
 // exports
 
@@ -20619,6 +20620,33 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/url/escape.js":
+/*!***************************************************!*\
+  !*** ./node_modules/css-loader/lib/url/escape.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
 }
 
 
@@ -103954,6 +103982,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/images/portada_img.png":
+/*!***************************************!*\
+  !*** ./public/images/portada_img.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/portada_img.png?9e111f1dfcdf9341f52a9eb813b92ccd";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -105339,54 +105378,18 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
         fluid: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
+        lg: 12,
+        md: 12,
         sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/clothes.png",
-        alt: "Ropa",
-        width: "100%"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
-        sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/running.png",
-        alt: "Deportes",
-        width: "100%"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
-        sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/shoes.png",
-        alt: "Calzado",
-        width: "100%"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
-        sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/electronics.png",
-        alt: "Electr\xF3nica",
-        width: "100%"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
-        sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/home.png",
-        alt: "Hogar",
-        width: "100%"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        lg: 4,
-        md: 4,
-        sm: 12
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "images/office.png",
-        alt: "Oficina",
-        width: "100%"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "portada-img"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "portada-msg"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        "class": "sub-front-msg"
+      }, "Ese obsequi\xF3 para una ocasi\xF3n especial lo encuentras en"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        "class": "front-msg"
+      }, "Interdinamik"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         lg: 12,
         md: 12,
         sm: 12
