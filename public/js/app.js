@@ -104759,6 +104759,8 @@ function (_Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var httpLink = "http://localhost/blog";
+      console.log("url link: " + httpLink);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
         className: "navbar_header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Brand, {
@@ -104782,7 +104784,7 @@ function (_Component) {
       }, "Inicio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Item, {
         className: "nav-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-        href: "http://localhost/blog",
+        href: httpLink,
         className: "nav-item"
       }, "Productos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Item, {
         className: "nav-item"
@@ -104797,7 +104799,7 @@ function (_Component) {
       }, "Contacto")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Item, {
         className: "nav-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-        href: "http://localhost/blog/?page_id=64",
+        href: httpLink + "/?page_id=64",
         className: "nav-item"
       }, "Noticias")))));
     }
@@ -105382,13 +105384,13 @@ function (_Component) {
         md: 12,
         sm: 12
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "portada-img"
+        className: "portada-img"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "portada-msg"
+        className: "portada-msg"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        "class": "sub-front-msg"
+        className: "sub-front-msg"
       }, "Ese obsequi\xF3 para una ocasi\xF3n especial lo encuentras en"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        "class": "front-msg"
+        className: "front-msg"
       }, "Interdinamik"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         lg: 12,
         md: 12,

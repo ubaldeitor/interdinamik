@@ -8,6 +8,7 @@ import {
 
 class Footer extends Component {
     render() {
+        const httpLinkFoot = process.env.MIX_APP_URL_BLOG;
         return (
             <Container fluid>
             <Row className="footerStyle" >
@@ -27,8 +28,8 @@ class Footer extends Component {
                                 <li><Link className="txtStyle" to={'/'}>Inicio</Link></li>
                                 <li><Link className="txtStyle" to={'/view/login'}>Login</Link></li>
                                 <li><Link className="txtStyle" to={'/view/adminapp'}>Admin</Link></li>
-                                <li><a className="txtStyle" href='http://localhost/blog'>Productos</a></li>
-                                <li><a className="txtStyle" href='http://localhost/blog/?page_id=64'>Noticias</a></li>
+                                <li><a className="txtStyle" href={httpLinkFoot}>Productos</a></li>
+                                <li><a className="txtStyle" href={httpLinkFoot+'/?page_id=64'}>Noticias</a></li>
                                 <li>Aviso de Privacidad</li>
                             </ul>    
                         </div>

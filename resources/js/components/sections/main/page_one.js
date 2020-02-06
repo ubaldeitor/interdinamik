@@ -43,10 +43,10 @@ class PageOne extends Component {
             <Container fluid>
                 <Row>
                     <Col lg={12} md={12} sm={12}>
-                        <div class="portada-img">
-                            <div class="portada-msg">
-                                <h3 class="sub-front-msg">Ese obsequió para una ocasión especial lo encuentras en</h3>
-                                <h1 class="front-msg">Interdinamik</h1>
+                        <div className="portada-img">
+                            <div className="portada-msg">
+                                <h3 className="sub-front-msg">Ese obsequió para una ocasión especial lo encuentras en</h3>
+                                <h1 className="front-msg">Interdinamik</h1>
                             </div>
                         </div>
                     </Col>
