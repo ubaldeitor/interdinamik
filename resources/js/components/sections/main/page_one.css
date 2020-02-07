@@ -71,7 +71,7 @@
 }
 
 .portada-img{
-    background:url(../../../../../public/images/portada_img.png) no-repeat;
+    background:url(../../../../../public/images/portada_img.jpeg) no-repeat;
     background-size: cover;
     height: 100vh;
 }

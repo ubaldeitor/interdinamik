@@ -20531,7 +20531,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.description {\n    padding: 5px 5px 5px 5px;\n    /*margin: 0px 5px 0px 5px;*/\n}\n\n.description p {\n    text-align: left;\n}\n\n.enterpriseMsg {\n    padding: 10px 0px 10px 0px;\n}\n\n.ubicationStyle {\n    background-color: #f2f2f2;\n    padding: 10px 0px 10px 0px;\n    text-align: left;\n}\n.ubicationStyle h2{\n    text-align: center;\n}\n\n.infoStyle {\n    padding: 10px 0px 10px 0px;\n}\n\n.backStyle {\n    text-align: left;\n}\n.nextStyle {\n    text-align: right;\n}\n\n.readMore {\n    text-align: right;\n}\n\n.sbtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.titleStyle {\n    font-family: 'Lato', sans-serif;\n}\n\n.txtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.txtLinkStyle {\n    font-family: 'Raleway', sans-serif;\n    text-align: right;\n}\n\n.btnStyle {\n    background-color: #F2D22E;\n    border-color: #F2D22E;\n}\n\n.btnStyle:hover {\n    background-color: #AABF11;\n    border-color: #AABF11;\n    color: black;\n}\n\n.main-msg{\n    margin-left: auto;\n    margin-right: auto;\n    width: 60%;\n}\n\n.portada-img{\n    background:url(" + escape(__webpack_require__(/*! ../../../../../public/images/portada_img.png */ "./public/images/portada_img.png")) + ") no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n\n.portada-msg {\n    width:40%;\n    margin-left: auto;\n    margin-right: 10%;\n    padding-top: 20%;\n}\n\n.sub-front-msg {\n    font-family: cursive;\n    color: #73062E;\n}\n\n.front-msg {\n    color: #BFB8B4;\n}", ""]);
+exports.push([module.i, "\n.description {\n    padding: 5px 5px 5px 5px;\n    /*margin: 0px 5px 0px 5px;*/\n}\n\n.description p {\n    text-align: left;\n}\n\n.enterpriseMsg {\n    padding: 10px 0px 10px 0px;\n}\n\n.ubicationStyle {\n    background-color: #f2f2f2;\n    padding: 10px 0px 10px 0px;\n    text-align: left;\n}\n.ubicationStyle h2{\n    text-align: center;\n}\n\n.infoStyle {\n    padding: 10px 0px 10px 0px;\n}\n\n.backStyle {\n    text-align: left;\n}\n.nextStyle {\n    text-align: right;\n}\n\n.readMore {\n    text-align: right;\n}\n\n.sbtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.titleStyle {\n    font-family: 'Lato', sans-serif;\n}\n\n.txtStyle {\n    font-family: 'Raleway', sans-serif;\n}\n\n.txtLinkStyle {\n    font-family: 'Raleway', sans-serif;\n    text-align: right;\n}\n\n.btnStyle {\n    background-color: #F2D22E;\n    border-color: #F2D22E;\n}\n\n.btnStyle:hover {\n    background-color: #AABF11;\n    border-color: #AABF11;\n    color: black;\n}\n\n.main-msg{\n    margin-left: auto;\n    margin-right: auto;\n    width: 60%;\n}\n\n.portada-img{\n    background:url(" + escape(__webpack_require__(/*! ../../../../../public/images/portada_img.jpeg */ "./public/images/portada_img.jpeg")) + ") no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\n\n.portada-msg {\n    width:40%;\n    margin-left: auto;\n    margin-right: 10%;\n    padding-top: 20%;\n}\n\n.sub-front-msg {\n    font-family: cursive;\n    color: #73062E;\n}\n\n.front-msg {\n    color: #BFB8B4;\n}", ""]);
 
 // exports
 
@@ -103982,14 +103982,14 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./public/images/portada_img.png":
-/*!***************************************!*\
-  !*** ./public/images/portada_img.png ***!
-  \***************************************/
+/***/ "./public/images/portada_img.jpeg":
+/*!****************************************!*\
+  !*** ./public/images/portada_img.jpeg ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/portada_img.png?9e111f1dfcdf9341f52a9eb813b92ccd";
+module.exports = "/images/portada_img.jpeg?32b3346772b460c722483f0ac029e6cc";
 
 /***/ }),
 
@@ -104344,6 +104344,7 @@ function (_Component) {
   _createClass(Footer, [{
     key: "render",
     value: function render() {
+      var httpLinkFoot = "https://localhost/blog";
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
         fluid: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -104373,10 +104374,10 @@ function (_Component) {
         to: '/view/adminapp'
       }, "Admin")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "txtStyle",
-        href: "http://localhost/blog"
+        href: httpLinkFoot
       }, "Productos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: "txtStyle",
-        href: "http://localhost/blog/?page_id=64"
+        href: httpLinkFoot + '/?page_id=64'
       }, "Noticias")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Aviso de Privacidad")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
         lg: 4,
         md: 4,
@@ -104759,8 +104760,8 @@ function (_Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      var httpLink = "http://localhost/blog";
-      console.log("url link: " + httpLink);
+      var httpLink = "https://localhost/blog"; //console.log("url link: " + httpLink);
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
         className: "navbar_header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Brand, {
